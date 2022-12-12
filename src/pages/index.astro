@@ -112,6 +112,8 @@ const pageTitle = "Home Page";
 			</div>
 		</div>
 
+		<!-- TODO: Refactor into component to map over-->
+
 		<div class='mx-auto max-w-screen-lg px-3 py-6'>
 			<div class='mb-12 space-y-2 text-center'>
 				<h2
@@ -132,57 +134,74 @@ const pageTitle = "Home Page";
 						<a href='/demo/astro-boilerplate'>
 							<img
 								class='h-36 w-36 hover:translate-y-1'
-								src='assets/images/project-web-design.png'
+								src='../../public/img/projects/brp-logo.png'
 								alt='Project Web Design'
 								loading='lazy'
 							/>
 						</a>
-					</div><div>
-						<div class='flex flex-col items-center gap-y-2 md:flex-row'>
-							<a class='hover:text-cyan-400' href='/demo/astro-boilerplate'>
-								<div class='text-xl font-semibold'>Project 1</div>
-							</a><div class='ml-3 flex gap-2'>
+					</div>
+					<div>
+						<div class='flex gap-y-2 flex-col'>
+							<a
+								class='text-slate-300 hover:text-slate-500'
+								href='/demo/astro-boilerplate'
+							>
+								<div class='text-2xl font-semibold'>Radiology Website</div>
+							</a>
+							<div class='flex gap-2'>
 								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900'
 								>
 									Astro.js
-								</div><div
+								</div>
+								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900'
 								>
 									Web design
-								</div><div
+								</div>
+								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900'
 								>
 									Tailwind.css
-								</div><div
+								</div>
+								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900'
 								>
 									TypeScript
 								</div>
 							</div>
-						</div><p class='mt-3 text-gray-400'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse bibendum. Nunc non posuere consectetur, justo erat
-							semper enim, non hendrerit dui odio id enim.
+						</div>
+						<p class='mt-3 text-gray-400'>
+							Bergman Ross and Partners is a large radiological company. Their
+							main goal was to create an online booking functionality on their
+							website. The project included the development the of their entire
+							website, including the booking functionality, as well as the
+							maintenance thereof.
 						</p>
 					</div>
-				</div><div
+				</div>
+				<div
 					class='flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row'
 				>
 					<div class='shrink-0'>
 						<a href='/demo/astro-boilerplate'>
 							<img
 								class='h-36 w-36 hover:translate-y-1'
-								src='assets/images/project-fire.png'
+								src='../../public/img/projects/jt-logo.png'
 								alt='Project Fire'
 								loading='lazy'
 							/>
 						</a>
 					</div><div>
-						<div class='flex flex-col items-center gap-y-2 md:flex-row'>
-							<a class='hover:text-cyan-400' href='/demo/astro-boilerplate'>
-								<div class='text-xl font-semibold'>Project 2</div>
-							</a><div class='ml-3 flex gap-2'>
+						<div class='flex flex-col gap-y-2'>
+							<a
+								class='text-slate-300 hover:text-slate-500'
+								href='/demo/astro-boilerplate'
+							>
+								<div class='text-2xl font-semibold'>
+									Jade Tavern Sushi Restaurant
+								</div>
+							</a><div class='flex gap-2'>
 								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-violet-400 text-violet-900'
 								>
@@ -198,9 +217,10 @@ const pageTitle = "Home Page";
 								</div>
 							</div>
 						</div><p class='mt-3 text-gray-400'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse bibendum. Nunc non posuere consectetur, justo erat
-							semper enim, non hendrerit dui odio id enim.
+							Jade Tavern is a chinese / sushi restaurant in the Southern
+							Suburbs. After the hard lockdown they were in need of an online
+							ordering system. I developed a website for them and integrated a
+							3rd party tool to handle the ordering functionality.
 						</p>
 					</div>
 				</div><div
@@ -210,16 +230,19 @@ const pageTitle = "Home Page";
 						<a href='/demo/astro-boilerplate'>
 							<img
 								class='h-36 w-36 hover:translate-y-1'
-								src='assets/images/project-maps.png'
+								src='../../public/img/projects/cwa-logo.png'
 								alt='Project Maps'
 								loading='lazy'
 							/>
 						</a>
 					</div><div>
-						<div class='flex flex-col items-center gap-y-2 md:flex-row'>
-							<a class='hover:text-cyan-400' href='/demo/astro-boilerplate'>
-								<div class='text-xl font-semibold'>Project 3</div>
-							</a><div class='ml-3 flex gap-2'>
+						<div class='flex gap-y-2 flex-col'>
+							<a
+								class='text-slate-300 hover:text-slate-500'
+								href='/demo/astro-boilerplate'
+							>
+								<div class='text-2xl font-semibold'>CW Attorneys</div>
+							</a><div class='flex gap-2'>
 								<div
 									class='rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900'
 								>
@@ -235,9 +258,10 @@ const pageTitle = "Home Page";
 								</div>
 							</div>
 						</div><p class='mt-3 text-gray-400'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse bibendum. Nunc non posuere consectetur, justo erat
-							semper enim, non hendrerit dui odio id enim.
+							CW Attorneys is an attorney office specializing in immigration.
+							Their main goal was to enable prospective clients to more easily
+							find contact information and service offerings during lockdown. I
+							built out a design and created a GMB for easy directions.
 						</p>
 					</div>
 				</div>
