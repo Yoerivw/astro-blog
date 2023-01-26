@@ -1,7 +1,19 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, img } = Astro.props;
 ---
 
 <li>
-	<a href={url}>{title}</a>
+	<a href={url}>
+		{title}
+	</a>
+	<div class='relative overflow-hidden rounded-xl'>
+		<img
+			src={img}
+			alt='art cover'
+			loading='lazy'
+			width='1000'
+			height='667'
+			class='h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105'
+		/>
+	</div>
 </li>
