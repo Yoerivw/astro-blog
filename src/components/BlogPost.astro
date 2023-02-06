@@ -1,5 +1,5 @@
 ---
-const { url, title, img } = Astro.props;
+const { url, title, img, description } = Astro.props;
 ---
 
 <div
@@ -20,7 +20,7 @@ const { url, title, img } = Astro.props;
 			{title}
 		</h3>
 		<p class='mt-6 mb-8 text-gray-600 dark:text-gray-300'>
-			Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+			{description}
 		</p>
 		<a class='inline-block' href={url}>
 			<span class='text-info dark:text-blue-300'>Read more</span>

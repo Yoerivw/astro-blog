@@ -19,8 +19,7 @@ const pageTitle = "My Astro Learning Blog";
 						Latest Articles
 					</h2>
 					<p class='lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300'>
-						Probably a description of what this blog will be about, articles
-						about stuff i'm learning at the moment
+						blog posts made trhough astro tutorial
 					</p>
 				</div>
 				<div class=''>
@@ -31,6 +30,7 @@ const pageTitle = "My Astro Learning Blog";
 									url={post.url}
 									title={post.frontmatter.title}
 									img={post.frontmatter.image.url}
+									description={post.frontmatter.description}
 								/>
 							))
 						}
